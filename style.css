@@ -339,6 +339,94 @@ a {
     opacity: 0.8;
 }
 
+/* 9b. Contact Page */
+.contact-hero {
+    padding: 120px 0 60px;
+    text-align: center;
+    background: radial-gradient(circle at top, rgba(214, 255, 63, 0.08), transparent 60%);
+}
+
+.contact-hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+}
+
+.contact-hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-details {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.15);
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-card h3 {
+    color: var(--color-accent);
+    font-size: 1.2em;
+}
+
+.card-link {
+    margin-top: auto;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-link::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    margin-top: -2px;
+}
+
+.contact-form-section .contact-subtitle {
+    margin-bottom: 30px;
+}
+
+.form-iframe {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.form-iframe iframe {
+    width: 100%;
+    min-height: 900px;
+}
+
 /* 10. Footer */
 .footer {
     padding: 40px 0;
@@ -458,5 +546,17 @@ a {
 
     .social-links {
         flex-direction: column;
+    }
+
+    .contact-hero {
+        padding-top: 100px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.2em;
+    }
+
+    .form-iframe iframe {
+        min-height: 750px;
     }
 }
